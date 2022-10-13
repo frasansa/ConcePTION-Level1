@@ -647,7 +647,7 @@ Res.con<-Res.con[["survey_id"]]#list of survey id present in SURVEY_OBSERVATIONS
 }
   
   if (length(continuous_files)==1){
-     continuous<-fread(continuous(paste0(tmp,continuous_files)))
+     continuous<-fread(paste0(tmp,continuous_files))
     continuous.tot<-continuous[,.N]
   }
   
